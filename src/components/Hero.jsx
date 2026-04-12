@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import heroImg from "../HERO.png";
 
-const DRIVE_FILE_ID = "10wjTL0DrfxDUz1zQ9HZTNeFK0wP_WAKQ";
+const DRIVE_FILE_ID = "1trRxaz1pJrpEKUBZwhF867R07oJnYXtq";
 
 export default function Hero() {
   const circleRef = useRef(null);
@@ -24,7 +24,7 @@ export default function Hero() {
   const handleDownload = (type) => {
     const url =
       type === "pdf"
-        ? `https://drive.google.com/uc?export=download&id=${DRIVE_FILE_ID}`
+        ? `https://docs.google.com/document/d/${DRIVE_FILE_ID}/export?format=pdf`
         : `https://docs.google.com/document/d/${DRIVE_FILE_ID}/export?format=docx`;
 
     window.open(url, "_blank");
