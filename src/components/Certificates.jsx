@@ -32,12 +32,11 @@ export default function Certificates() {
       <h2 className="sec-title fi">Things I've <em>learned</em></h2>
       <div className="cert-list fi">
         {certs.map((c, i) => (
-          <a
+          <div
             key={i}
-            href={c.url}
-            target="_blank"
-            rel="noopener noreferrer"
             className="cert-row"
+            onClick={() => window.open(c.url, '_blank', 'noopener,noreferrer')}
+            style={{ cursor: 'none' }}
           >
             <div className="cert-icon">
               <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,7 +52,7 @@ export default function Certificates() {
               <p className="cert-id">ID: {c.id}</p>
             </div>
             <span className="cert-arr">↗</span>
-          </a>
+          </div>
         ))}
       </div>
     </section>
