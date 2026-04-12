@@ -1,31 +1,27 @@
 const certs = [
   {
-    title: 'Full Stack Web Development',
-    issuer: 'Coursera / Meta',
-    date: 'Aug 2024',
-    id: 'CERT-123456',
-    url: '#',
+    title: 'Programming for Everybody (Getting Started with Python)',
+    issuer: 'University of Michigan / Coursera',
+    date: 'Nov 2023',
+    id: 'F9ETJZXKPPMN',
+    url: 'https://coursera.org/verify/F9ETJZXKPPMN',
+    desc: 'Completed a foundational Python programming course — variables, conditionals, loops, and functions. Authorized by the University of Michigan and taught by Dr. Charles Severance.',
   },
   {
-    title: 'MongoDB for JavaScript Developers',
-    issuer: 'MongoDB University',
-    date: 'Jun 2024',
-    id: 'CERT-MDB-789',
-    url: '#',
+    title: 'Exploring C',
+    issuer: 'University of Michigan / Coursera',
+    date: 'Apr 2024',
+    id: '3FNREJTVHZYH',
+    url: 'https://coursera.org/verify/3FNREJTVHZYH',
+    desc: 'Dug into C programming concepts including memory management, pointers, and structured problem-solving. Strengthened low-level understanding that complements higher-level web dev work.',
   },
   {
-    title: 'JavaScript Algorithms & Data Structures',
-    issuer: 'freeCodeCamp',
-    date: 'Mar 2024',
-    id: 'CERT-FCC-456',
-    url: '#',
-  },
-  {
-    title: 'React — The Complete Guide',
-    issuer: 'Udemy',
-    date: 'Jan 2024',
-    id: 'UC-abc-12345',
-    url: '#',
+    title: 'Using MySQL Database with PHP',
+    issuer: 'Coursera Project Network',
+    date: 'Sep 2024',
+    id: 'XHM7NIK6WOY5',
+    url: 'https://coursera.org/verify/XHM7NIK6WOY5',
+    desc: 'Hands-on project certificate covering MySQL database integration with PHP — querying, CRUD operations, and connecting a backend to a relational database in a real project environment.',
   },
 ]
 
@@ -53,7 +49,8 @@ export default function Certificates() {
             <div className="cert-body">
               <p className="cert-title">{c.title}</p>
               <p className="cert-meta">{c.issuer} &nbsp;·&nbsp; {c.date}</p>
-              <p className="cert-id">{c.id}</p>
+              <p className="cert-desc">{c.desc}</p>
+              <p className="cert-id">ID: {c.id}</p>
             </div>
             <span className="cert-arr">↗</span>
           </a>
