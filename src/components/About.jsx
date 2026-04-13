@@ -18,7 +18,7 @@ export default function About() {
     ['based in', 'Jaipur, India'],
     ['email', <a href="mailto:rathoreshivani237@gmail.com">rathoreshivani237@gmail.com</a>],
     ['github', <a href="https://github.com/Shivani856" target="_blank">github.com/Shivani856</a>],
-    ['linkedin', <a href="https://www.linkedin.com/in/shivani-rathore-0b8282353/" target="_blank">linkedin.com/in/yourusername</a>]
+    ['linkedin', <a href="https://www.linkedin.com/in/shivani-rathore-0b8282353/" target="_blank">linkedin.com/in/Shivani Rathore</a>]
   ].map(([k, v]) => (
     <div className="info-row" key={k}>
       <span className="ik">{k}</span>
